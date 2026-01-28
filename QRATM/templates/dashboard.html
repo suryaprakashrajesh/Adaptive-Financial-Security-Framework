@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-12 mb-4">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="mb-0">Welcome, {{ username }}!</h3>
+                </div>
+                <div class="card-body">
+                    {% if is_admin %}
+                    <h4>ATM Balance: ₹{{ "%.2f"|format(atm_balance) }}</h4>
+                    {% else %}
+                    <h4>Your Balance: ₹{{ "%.2f"|format(balance) }}</h4>
+                    <div class="mt-3">
+                        <a href="{{ url_for('generate') }}" class="btn btn-primary">
+                            <i class="fas fa-qrcode"></i> Generate QR Code
+                        </a>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% if is_admin %}
+    <!-- Admin Deposit Form -->
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    <h4 class="mb-0">Deposit to User Account</h4>
+                </div>
+                <div class="card-body">
+                    <form action="{{ url_for('deposit') }}" method="post">
+                        <div class="mb-3">
+                            <label for="user_id" class="form-label">User ID</label>
+                            <input type="text" class="form-control" id="user_id" name="user_id" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="amount" class="form-label">Amount</label>
+                            <div class="input-group">
+                                <span class="input-group-text">₹</span>
+                                <input type="number" class="form-control" id="amount" name="amount" step="0.01"
+                                    required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-success">Deposit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Recent Transactions -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    <h4 class="mb-0">Recent Transactions</h4>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    {% if is_admin %}
+                                    <th>User ID</th>
+                                    {% endif %}
+                                    <th>Amount</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                    <th>Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for transaction in transactions %}
+                                <tr>
+                                    <td>{{ transaction.id }}</td>
+                                    {% if is_admin %}
+                                    <td>{{ transaction.name }}</td>
+                                    {% endif %}
+                                    <td>₹{{ "%.2f"|format(transaction.amount) }}</td>
+                                    <td>{{ transaction.date }}</td>
+                                    <td><span class="badge bg-success">{{ transaction.status }}</span></td>
+                                    <td>{{ transaction.type }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="card-footer text-center text-muted">
+                    <small>© 2025 QR ATM. All rights reserved.</small>
+                    <br>
+                    <small>Developed by <a href="#" class="text-decoration-none">QR ATM Team</a></small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

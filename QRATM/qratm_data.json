@@ -1,0 +1,431 @@
+{
+    "users": {
+        "admin": {
+            "password": "admin123",
+            "role": "admin"
+        },
+        "user1": {
+            "password": "user123",
+            "role": "user",
+            "balance": 3200.0
+        },
+        "user2": {
+            "password": "user123",
+            "role": "user",
+            "balance": 500.0
+        },
+        "Surya": {
+            "password": "user123",
+            "role": "user",
+            "balance": 23500.0
+        },
+        "": {
+            "password": "user123",
+            "role": "user",
+            "balance": 3000.0
+        },
+        "Deepa": {
+            "password": "user123",
+            "role": "user",
+            "balance": 2300.0
+        }
+    },
+    "atm_balance": 53500.0,
+    "atm_history": [
+        {
+            "id": 1,
+            "name": "user1",
+            "amount": 2000.0,
+            "date": "2025-05-13 16:11:13",
+            "status": "Completed",
+            "type": "ATM"
+        },
+        {
+            "id": 2,
+            "name": "user2",
+            "amount": 1000.0,
+            "date": "2025-05-13 16:12:34",
+            "status": "Completed",
+            "type": "ATM"
+        },
+        {
+            "id": 3,
+            "name": "user1",
+            "amount": 1000.0,
+            "date": "2025-05-13 16:14:29",
+            "status": "Completed",
+            "type": "ATM"
+        },
+        {
+            "id": 4,
+            "name": "user1",
+            "amount": 10000.0,
+            "date": "2025-05-13 16:59:08",
+            "status": "Completed",
+            "type": "Deposit"
+        },
+        {
+            "id": 5,
+            "name": "user1",
+            "amount": 1000.0,
+            "date": "2025-05-13 17:08:34",
+            "status": "Completed",
+            "type": "ATM"
+        },
+        {
+            "id": 6,
+            "name": "user1",
+            "amount": 1000.0,
+            "date": "2025-05-13 17:10:25",
+            "status": "Completed",
+            "type": "ATM"
+        },
+        {
+            "id": 7,
+            "name": "user1",
+            "amount": 1000.0,
+            "date": "2025-05-13 17:12:37",
+            "status": "Completed",
+            "type": "ATM"
+        },
+        {
+            "id": 8,
+            "name": "user1",
+            "amount": 1000.0,
+            "date": "2025-05-13 17:14:16",
+            "status": "Completed",
+            "type": "ATM"
+        },
+        {
+            "id": 9,
+            "name": "user1",
+            "amount": 100.0,
+            "date": "2025-05-13 17:15:35",
+            "status": "Completed",
+            "type": "ATM"
+        },
+        {
+            "id": 10,
+            "name": "user1",
+            "amount": 100.0,
+            "date": "2025-05-13 17:15:44",
+            "status": "Completed",
+            "type": "ATM"
+        },
+        {
+            "id": 11,
+            "name": "user1",
+            "amount": 100.0,
+            "date": "2025-05-13 17:16:47",
+            "status": "Completed",
+            "type": "ATM"
+        },
+        {
+            "id": 12,
+            "name": "user1",
+            "amount": 100.0,
+            "date": "2025-05-13 17:17:10",
+            "status": "Completed",
+            "type": "ATM"
+        },
+        {
+            "id": 13,
+            "name": "user1",
+            "amount": 2000.0,
+            "date": "2025-05-14 10:29:30",
+            "status": "Completed",
+            "type": "ATM"
+        },
+        {
+            "id": 14,
+            "name": "user1",
+            "amount": 600.0,
+            "date": "2025-05-14 10:40:09",
+            "status": "Completed",
+            "type": "ATM"
+        },
+        {
+            "id": 15,
+            "name": "user1",
+            "amount": 600.0,
+            "date": "2025-05-14 10:41:29",
+            "status": "Completed",
+            "type": "ATM"
+        },
+        {
+            "id": 16,
+            "name": "user1",
+            "amount": 1000.0,
+            "date": "2025-05-15 11:40:11",
+            "status": "Completed",
+            "type": "ATM"
+        },
+        {
+            "id": 17,
+            "name": "user1",
+            "amount": 200.0,
+            "date": "2025-05-15 14:57:36",
+            "status": "Completed",
+            "type": "ATM"
+        },
+        {
+            "id": 18,
+            "name": "Surya",
+            "amount": 2000.0,
+            "date": "2025-05-19 15:23:34",
+            "status": "Completed",
+            "type": "ATM"
+        },
+        {
+            "id": 19,
+            "name": "Surya",
+            "amount": 10000.0,
+            "date": "2025-05-19 15:25:52",
+            "status": "Completed",
+            "type": "Deposit"
+        },
+        {
+            "id": 20,
+            "name": "user2",
+            "amount": 1500.0,
+            "date": "2025-05-19 15:28:44",
+            "status": "Completed",
+            "type": "ATM"
+        },
+        {
+            "id": 21,
+            "name": "Surya",
+            "amount": 500.0,
+            "date": "2025-12-22 20:19:50",
+            "status": "Completed",
+            "type": "ATM"
+        },
+        {
+            "id": 22,
+            "name": "Surya",
+            "amount": 1000.0,
+            "date": "2025-12-22 20:22:07",
+            "status": "Completed",
+            "type": "Deposit"
+        },
+        {
+            "id": 23,
+            "name": "Deepa",
+            "amount": 500.0,
+            "date": "2025-12-24 07:58:52",
+            "status": "Completed",
+            "type": "ATM"
+        },
+        {
+            "id": 24,
+            "name": "Deepa",
+            "amount": 200.0,
+            "date": "2025-12-24 10:28:51",
+            "status": "Completed",
+            "type": "ATM"
+        }
+    ],
+    "user_history": {
+        "user1": [
+            {
+                "id": 1,
+                "name": "user1",
+                "amount": 2000.0,
+                "date": "2025-05-13 16:11:13",
+                "status": "Completed",
+                "type": "ATM"
+            },
+            {
+                "id": 3,
+                "name": "user1",
+                "amount": 1000.0,
+                "date": "2025-05-13 16:14:29",
+                "status": "Completed",
+                "type": "ATM"
+            },
+            {
+                "id": 4,
+                "name": "user1",
+                "amount": 10000.0,
+                "date": "2025-05-13 16:59:08",
+                "status": "Completed",
+                "type": "Deposit"
+            },
+            {
+                "id": 5,
+                "name": "user1",
+                "amount": 1000.0,
+                "date": "2025-05-13 17:08:34",
+                "status": "Completed",
+                "type": "ATM"
+            },
+            {
+                "id": 6,
+                "name": "user1",
+                "amount": 1000.0,
+                "date": "2025-05-13 17:10:25",
+                "status": "Completed",
+                "type": "ATM"
+            },
+            {
+                "id": 7,
+                "name": "user1",
+                "amount": 1000.0,
+                "date": "2025-05-13 17:12:37",
+                "status": "Completed",
+                "type": "ATM"
+            },
+            {
+                "id": 8,
+                "name": "user1",
+                "amount": 1000.0,
+                "date": "2025-05-13 17:14:16",
+                "status": "Completed",
+                "type": "ATM"
+            },
+            {
+                "id": 9,
+                "name": "user1",
+                "amount": 100.0,
+                "date": "2025-05-13 17:15:35",
+                "status": "Completed",
+                "type": "ATM"
+            },
+            {
+                "id": 10,
+                "name": "user1",
+                "amount": 100.0,
+                "date": "2025-05-13 17:15:44",
+                "status": "Completed",
+                "type": "ATM"
+            },
+            {
+                "id": 11,
+                "name": "user1",
+                "amount": 100.0,
+                "date": "2025-05-13 17:16:47",
+                "status": "Completed",
+                "type": "ATM"
+            },
+            {
+                "id": 12,
+                "name": "user1",
+                "amount": 100.0,
+                "date": "2025-05-13 17:17:10",
+                "status": "Completed",
+                "type": "ATM"
+            },
+            {
+                "id": 13,
+                "name": "user1",
+                "amount": 2000.0,
+                "date": "2025-05-14 10:29:30",
+                "status": "Completed",
+                "type": "ATM"
+            },
+            {
+                "id": 14,
+                "name": "user1",
+                "amount": 600.0,
+                "date": "2025-05-14 10:40:09",
+                "status": "Completed",
+                "type": "ATM"
+            },
+            {
+                "id": 15,
+                "name": "user1",
+                "amount": 600.0,
+                "date": "2025-05-14 10:41:29",
+                "status": "Completed",
+                "type": "ATM"
+            },
+            {
+                "id": 16,
+                "name": "user1",
+                "amount": 1000.0,
+                "date": "2025-05-15 11:40:11",
+                "status": "Completed",
+                "type": "ATM"
+            },
+            {
+                "id": 17,
+                "name": "user1",
+                "amount": 200.0,
+                "date": "2025-05-15 14:57:36",
+                "status": "Completed",
+                "type": "ATM"
+            }
+        ],
+        "user2": [
+            {
+                "id": 2,
+                "name": "user2",
+                "amount": 1000.0,
+                "date": "2025-05-13 16:12:34",
+                "status": "Completed",
+                "type": "ATM"
+            },
+            {
+                "id": 20,
+                "name": "user2",
+                "amount": 1500.0,
+                "date": "2025-05-19 15:28:44",
+                "status": "Completed",
+                "type": "ATM"
+            }
+        ],
+        "Surya": [
+            {
+                "id": 18,
+                "name": "Surya",
+                "amount": 2000.0,
+                "date": "2025-05-19 15:23:34",
+                "status": "Completed",
+                "type": "ATM"
+            },
+            {
+                "id": 19,
+                "name": "Surya",
+                "amount": 10000.0,
+                "date": "2025-05-19 15:25:52",
+                "status": "Completed",
+                "type": "Deposit"
+            },
+            {
+                "id": 21,
+                "name": "Surya",
+                "amount": 500.0,
+                "date": "2025-12-22 20:19:50",
+                "status": "Completed",
+                "type": "ATM"
+            },
+            {
+                "id": 22,
+                "name": "Surya",
+                "amount": 1000.0,
+                "date": "2025-12-22 20:22:07",
+                "status": "Completed",
+                "type": "Deposit"
+            }
+        ],
+        "Deepa": [
+            {
+                "id": 23,
+                "name": "Deepa",
+                "amount": 500.0,
+                "date": "2025-12-24 07:58:52",
+                "status": "Completed",
+                "type": "ATM"
+            },
+            {
+                "id": 24,
+                "name": "Deepa",
+                "amount": 200.0,
+                "date": "2025-12-24 10:28:51",
+                "status": "Completed",
+                "type": "ATM"
+            }
+        ]
+    },
+    "last_updated": "2025-12-24 10:28:51"
+}

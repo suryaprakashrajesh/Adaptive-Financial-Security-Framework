@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}Transaction Success{% endblock %}
+{% block content %}
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg border-0 rounded-lg">
+                <div class="card-header bg-success text-white">
+                    <h3 class="text-center mb-0">Transaction Successful!</h3>
+                </div>
+                <div class="card-body p-4">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-check-circle text-success" style="font-size: 4rem;"></i>
+                    </div>
+                    <div class="transaction-details">
+                        <p><strong>USER ID:</strong> {{ transaction.name }}</p>
+                        <p><strong>Amount:</strong> ₹{{ "%.2f"|format(transaction.amount) }}</p>
+                        <p><strong>Date:</strong> {{ transaction.date }}</p>
+                        <p><strong>Status:</strong> <span class="badge bg-success">{{ transaction.status }}</span></p>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="{{ url_for('scan') }}" class="btn btn-primary">New Transaction</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

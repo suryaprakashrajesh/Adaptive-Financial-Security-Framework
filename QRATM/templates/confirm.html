@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}Confirm Transaction{% endblock %}
+{% block content %}
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg border-0 rounded-lg">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="text-center mb-0">Confirm Transaction</h3>
+                </div>
+                <div class="card-body p-4">
+                    <div class="transaction-details mb-4">
+                        <p class="mb-2"><strong>USER ID:</strong></p>
+                        <p class="mb-3">{{ name }}</p>
+
+                        <p class="mb-2"><strong>Amount:</strong></p>
+                        <p class="mb-3">₹{{ "%.2f"|format(amount|float) }}</p>
+                    </div>
+
+                    <form method="post" action="{{ url_for('process') }}">
+                        <input type="hidden" name="name" value="{{ name }}">
+                        <input type="hidden" name="amount" value="{{ amount }}">
+                        <input type="hidden" name="pin" value="{{ pin }}">
+
+                        <div class="mb-3">
+                            <label for="entered_pin" class="form-label">Enter PIN to Confirm</label>
+                            <input type="password" class="form-control" id="entered_pin" name="entered_pin"
+                                maxlength="4" required>
+                        </div>
+
+                        {% if error %}
+                        <div class="alert alert-danger">{{ error }}</div>
+                        {% endif %}
+
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">Confirm Transaction</button>
+                            <a href="{{ url_for('scan') }}" class="btn btn-outline-secondary">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
