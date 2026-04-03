@@ -1,7 +1,0 @@
-gunicorn
-Flask
-opencv-python
-numpy
-qrcode
-Werkzeug
-pyopenssl
