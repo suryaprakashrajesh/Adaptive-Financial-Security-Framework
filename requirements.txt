@@ -1,6 +1,5 @@
 gunicorn
 Flask
-pyzbar
 opencv-python
 numpy
 qrcode
